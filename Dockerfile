@@ -32,6 +32,7 @@ RUN apt-get update && \
         texlive-latex-extra \
         texlive-latex-recommended \
         wapiti \
+        vim \
         wget \
         xsltproc \
     -yq && \
@@ -86,3 +87,5 @@ RUN bash /update && \
     service openvas-scanner stop && \
     service openvas-manager stop && \
     service redis-server stop
+
+CMD /start
